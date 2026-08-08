@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Korepetycje z Matematyki i Fizyki — Łukasz Śmichurski</title>
+<meta name="description" content="Korepetycje z matematyki i fizyki — szkoła podstawowa, liceum, matura. Student Automatyki i Robotyki na Politechnice Poznańskiej.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Favicons & manifest -->
+<link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+
+<!-- Social meta -->
+<meta property="og:title" content="Korepetycje — Łukasz Śmichurski">
+<meta property="og:description" content="Indywidualne lekcje matematyki i fizyki. Przygotowanie do sprawdzianów i matury.">
+<meta property="og:image" content="/images/profile.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="min-h-screen text-slate-100 relative overflow-x-hidden bg-photo" style="background-image: url('images/5.webp')" data-parallax-speed="0.28">
+  <div class="fixed inset-0 -z-10 bg-slate-900/60"></div>
+  <div class="fixed inset-0 -z-10 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900/40"></div>
+
+  <!-- Nawigacja -->
+  <nav class="sticky top-0 z-50 w-full glass border-x-0 border-t-0 px-0 py-4">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 font-display font-semibold text-white hover:text-emerald-300 transition-colors duration-300">
+        <i class="fa-solid fa-arrow-left text-sm text-emerald-300"></i>
+        <span class="hidden xs:inline">Łukasz Śmichurski</span>
+        <span class="xs:hidden">Powrót</span>
+      </a>
+
+      <ul id="navLinks" class="hidden md:flex items-center gap-7 text-sm text-slate-300 font-medium">
+        <li><a href="#o-mnie" class="hover:text-emerald-300 transition-colors duration-300">O mnie</a></li>
+        <li><a href="#dlaczego-ja" class="hover:text-emerald-300 transition-colors duration-300">Dlaczego ja?</a></li>
+        <li><a href="#oferta" class="hover:text-emerald-300 transition-colors duration-300">Oferta</a></li>
+        <li><a href="#opinie" class="hover:text-emerald-300 transition-colors duration-300">Opinie</a></li>
+        <li><a href="#kontakt" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white transition-colors duration-300">Kontakt</a></li>
+      </ul>
+
+      <button id="hamburger" class="md:hidden text-xl text-slate-200" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobilne menu -->
+    <ul id="mobileNav" class="hidden md:hidden flex-col gap-1 mt-4 pb-1 text-sm text-slate-300 font-medium w-full">
+      <li><a href="#o-mnie" class="block py-2.5 hover:text-emerald-300 transition-colors duration-300">O mnie</a></li>
+      <li><a href="#dlaczego-ja" class="block py-2.5 hover:text-emerald-300 transition-colors duration-300">Dlaczego ja?</a></li>
+      <li><a href="#oferta" class="block py-2.5 hover:text-emerald-300 transition-colors duration-300">Oferta</a></li>
+      <li><a href="#opinie" class="block py-2.5 hover:text-emerald-300 transition-colors duration-300">Opinie</a></li>
+      <li><a href="#kontakt" class="block py-2.5 text-emerald-300">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main class="relative mx-auto max-w-5xl px-5 sm:px-8">
+
+    <!-- Hero -->
+    <header class="py-16 sm:py-24 text-center flex flex-col items-center">
+      <p class="font-mono text-xs sm:text-sm tracking-[0.3em] text-emerald-300/80 uppercase mb-4">Korepetycje · Matematyka i fizyka</p>
+      <h1 class="font-display text-4xl sm:text-6xl font-bold tracking-tight mb-5 max-w-3xl">
+        Zdawaj przedmioty <span class="text-emerald-300">bezstresowo</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg max-w-xl mb-8 leading-relaxed">
+        Indywidualne lekcje dopasowane do Twoich potrzeb — od podstawówki po maturę.
+      </p>
+      <a href="#kontakt" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl btn-primary text-white font-semibold shadow-lg transition-colors duration-300">
+        Umów się na lekcję <i class="fa-solid fa-arrow-right text-sm"></i>
+      </a>
+    </header>
+
+    <!-- O mnie -->
+    <section id="o-mnie" class="scroll-mt-24 mb-8">
+      <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-7 sm:p-10">
+        <h2 class="font-display text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-3">
+          <i class="fa-solid fa-user-graduate text-emerald-300"></i> O mnie
+        </h2>
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-7">
+          <img src="images/lukasz-smichurski.jpg" alt="Zdjęcie Łukasza Śmichurskiego"
+               class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover border-2 border-white/10 shadow-xl shrink-0">
+          <p class="text-slate-300 leading-relaxed">
+            Jestem studentem Automatyki i Robotyki na Politechnice Poznańskiej oraz absolwentem III LO w Poznaniu.
+            Od ponad pięciu lat prowadzę korepetycje głównie z matematyki i fizyki, wspierając uczniów na różnych
+            poziomach — od szkoły podstawowej po liceum, także na poziomie rozszerzonym. Moje podejście opiera się
+            na indywidualnym dopasowaniu materiału oraz tłumaczeniu zagadnień w sposób prosty i przystępny.
+            Zależy mi, aby nauka była skuteczna, a jednocześnie przyjemna i motywująca.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dlaczego ja -->
+    <section id="dlaczego-ja" class="scroll-mt-24 mb-8">
+      <h2 class="font-display text-xl sm:text-2xl font-semibold mb-5 flex items-center gap-3">
+        <i class="fa-solid fa-lightbulb text-emerald-300"></i> Dlaczego wybrać moje korepetycje?
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+        <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-6 sm:p-7">
+          <div class="w-11 h-11 rounded-lg bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-chalkboard-user text-emerald-300"></i>
+          </div>
+          <h3 class="font-display font-semibold mb-2">Indywidualne podejście</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Każda lekcja jest dopasowana do Twojego tempa i stylu nauki, aby maksymalizować efektywność zajęć.
+          </p>
+        </div>
+
+        <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-6 sm:p-7">
+          <div class="w-11 h-11 rounded-lg bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-gears text-emerald-300"></i>
+          </div>
+          <h3 class="font-display font-semibold mb-2">Zrozumienie, nie zapamiętywanie</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Wzory tłumaczę na praktycznych przykładach — dzięki temu łatwiej je zrozumieć i zapamiętać na dłużej.
+          </p>
+        </div>
+
+        <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-6 sm:p-7">
+          <div class="w-11 h-11 rounded-lg bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-face-smile text-emerald-300"></i>
+          </div>
+          <h3 class="font-display font-semibold mb-2">Bezstresowa atmosfera</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Uczę cierpliwie i przystępnie, tworząc środowisko, w którym zadawanie pytań jest zawsze mile widziane.
+          </p>
+        </div>
+
+        <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-6 sm:p-7">
+          <div class="w-11 h-11 rounded-lg bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-chart-line text-emerald-300"></i>
+          </div>
+          <h3 class="font-display font-semibold mb-2">Skuteczne przygotowanie</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Zajęcia realnie przekładają się na poprawę ocen i pewność siebie przed sprawdzianami oraz maturą.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Oferta -->
+    <section id="oferta" class="scroll-mt-24 mb-8">
+      <h2 class="font-display text-xl sm:text-2xl font-semibold mb-5 flex items-center gap-3">
+        <i class="fa-solid fa-book-open text-emerald-300"></i> Oferta
+      </h2>
+      <!-- Cennik -->
+      <div class="glass rounded-2xl shadow-xl overflow-hidden">
+        <div class="px-6 sm:px-8 pt-6 pb-1">
+          <h3 class="font-display font-semibold flex items-center gap-2.5">
+            <i class="fa-solid fa-tag text-emerald-300"></i> Cennik
+          </h3>
+        </div>
+        <div class="divide-y divide-white/10">
+          <div class="flex items-center justify-between px-6 sm:px-8 py-5 hover:bg-white/5 transition-colors duration-300">
+            <div>
+              <p class="font-medium">Szkoła podstawowa</p>
+              <p class="text-slate-400 text-sm">Matematyka, klasy 4–8</p>
+            </div>
+            <p class="font-mono text-lg text-emerald-300 whitespace-nowrap">90 zł<span class="text-slate-500 text-sm"> / h</span></p>
+          </div>
+          <div class="flex items-center justify-between px-6 sm:px-8 py-5 hover:bg-white/5 transition-colors duration-300">
+            <div>
+              <p class="font-medium">Liceum / technikum</p>
+              <p class="text-slate-400 text-sm">Matematyka i fizyka</p>
+            </div>
+            <p class="font-mono text-lg text-emerald-300 whitespace-nowrap">100 zł<span class="text-slate-500 text-sm"> / h</span></p>
+          </div>
+          <div class="flex items-center justify-between px-6 sm:px-8 py-5 hover:bg-white/5 transition-colors duration-300">
+            <div>
+              <p class="font-medium">Przygotowanie do matury z matematyki</p>
+              <p class="text-slate-400 text-sm">Poziom podstawowy</p>
+            </div>
+            <p class="font-mono text-lg text-emerald-300 whitespace-nowrap">100 zł<span class="text-slate-500 text-sm"> / h</span></p>
+          </div>
+        </div>
+        <p class="text-slate-400 text-xs px-6 sm:px-8 py-4 font-mono">Dostępne pakiety lekcji ze zniżką — szczegóły w rozmowie. Zajęcia online lub stacjonarnie w Zalasewie.</p>
+      </div>
+    </section>
+
+    <!-- Opinie -->
+    <section id="opinie" class="scroll-mt-24 mb-8">
+      <h2 class="font-display text-xl sm:text-2xl font-semibold mb-5 flex items-center gap-3">
+        <i class="fa-solid fa-star text-emerald-300"></i> Opinie uczniów
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-5">
+
+        <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-6">
+          <i class="fa-solid fa-quote-left text-emerald-400/40 mb-3"></i>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Godny zaufania, widać że ma doświadczenie. Korepetytor ze świetnie opanowanym materiałem.
+          </p>
+          <p class="font-mono text-xs text-slate-400">— Adam</p>
+        </div>
+
+        <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-6">
+          <i class="fa-solid fa-quote-left text-emerald-400/40 mb-3"></i>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Dobrze tłumaczy, dużo cierpliwości.
+          </p>
+          <p class="font-mono text-xs text-slate-400">— Michał</p>
+        </div>
+
+        <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 p-6">
+          <i class="fa-solid fa-quote-left text-emerald-400/40 mb-3"></i>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Polecam! Profesjonalny i miły korepetytor
+          </p>
+          <p class="font-mono text-xs text-slate-400">— Maja</p>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-emerald-400/30 transition duration-300 px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-300 text-sm">Chcesz zobaczyć więcej opinii? Sprawdź mnie na Google.</p>
+        <a href="https://www.google.com/search?q=%C5%81ukasz+%C5%9Amichurski+-+Matematyka+i+Fizyka+Opinie" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 text-emerald-300 hover:text-emerald-200 text-sm font-medium transition-colors duration-300 shrink-0">
+          <i class="fa-brands fa-google"></i> Zobacz opinie na Google
+        </a>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="scroll-mt-24 mb-16">
+      <h2 class="font-display text-xl sm:text-2xl font-semibold mb-5 flex items-center gap-3">
+        <i class="fa-solid fa-comments text-emerald-300"></i> Skontaktuj się ze mną
+      </h2>
+
+      <div class="grid grid-cols-1 gap-6">
+
+        <!-- Szybki kontakt (bez WhatsApp) -->
+        <div class="flex flex-col gap-5">
+          <div class="glass rounded-2xl shadow-xl p-6 flex flex-col gap-3 text-sm">
+            <a href="mailto:smichurski34@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-emerald-300 transition-colors duration-300">
+              <i class="fa-solid fa-envelope text-emerald-300 w-4"></i>  smichurski34@gmail.com
+            </a>
+            <a href="tel:+48535105345" class="flex items-center gap-3 text-slate-300 hover:text-emerald-300 transition-colors duration-300">
+              <i class="fa-solid fa-phone text-emerald-300 w-4"></i> +48 535 105 345
+            </a>
+            <p class="flex items-center gap-3 text-slate-300">
+              <i class="fa-solid fa-location-dot text-emerald-300 w-4"></i> Zalasewo / Online
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Stopka -->
+  <footer class="site-footer mt-16 sm:mt-24">
+    <div class="site-footer__inner">
+      <div class="site-footer__ornament" aria-hidden="true"><span></span></div>
+      <p class="site-footer__text font-mono">Łukasz Śmichurski · Zalasewo · Politechnika Poznańska</p>
+      <div class="site-footer__links">
+        <a href="https://www.linkedin.com/in/łukasz-śmichurski-4b88043a8/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+        <a href="https://github.com/LukaszSmichurski" aria-label="GitHub"><i class="fa-brands fa-github text-lg"></i></a>
+        <a href="mailto:smichluk@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope text-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

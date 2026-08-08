@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wizytówka — Łukasz Śmichurski</title>
+<meta name="description" content="Portfolio inżynierskie: projekty z automatyki, robotyki i programowania. C/C++, Python, PLC, ROS, Altium.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Favicons & manifest -->
+<link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+
+<!-- Social meta -->
+<meta property="og:title" content="Wizytówka — Łukasz Śmichurski">
+<meta property="og:description" content="Portfolio inżynierskie: projekty z automatyki, robotyki i programowania. C/C++, Python, PLC, ROS, Altium.">
+<meta property="og:image" content="/images/lukasz-smichurski.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="min-h-screen text-slate-100 relative overflow-x-hidden bg-photo" style="background-image: url('images/6.webp')" data-parallax-speed="0.32">
+  <div class="fixed inset-0 -z-10 bg-slate-900/60"></div>
+  <div class="fixed inset-0 -z-10 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900/40"></div>
+
+  <main class="relative mx-auto max-w-5xl px-5 sm:px-8 py-8 sm:py-14">
+
+    <!-- Powrót -->
+    <a href="index.html"
+       class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white mb-10 group transition-colors duration-300">
+      <i class="fa-solid fa-arrow-left text-xs group-hover:-translate-x-1 transition-transform duration-300"></i>
+      Strona główna
+    </a>
+
+    <!-- Nagłówek -->
+    <header class="mb-12">
+      <p class="font-mono text-xs sm:text-sm tracking-[0.3em] text-blue-300/80 uppercase mb-3">Portfolio inżynierskie</p>
+      <h1 class="font-display text-3xl sm:text-5xl font-bold tracking-tight mb-4">Automatyka, Robotyka, Kod.</h1>
+      <p class="text-slate-400 max-w-2xl leading-relaxed">
+        Wybrane projekty z okresu studiów oraz zainteresowań własnych — od programowania po autonomiczne układy elektroniczne.
+      </p>
+    </header>
+
+    <!-- O mnie -->
+    <section class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-white/25 transition duration-300 p-7 sm:p-10 mb-8">
+      <h2 class="font-display text-xl sm:text-2xl font-semibold mb-4 flex items-center gap-3">
+        <i class="fa-solid fa-user-gear text-blue-300"></i> O mnie
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-6 max-w-3xl">
+        Jestem studentem 3. roku Automatyki i Robotyki na Politechnice Poznańskiej. Interesuję się elektroniką, programowaniem oraz robotyką mobilną. Szukam stażu lub pracy, w której
+        mogę połączyć wiedzę teoretyczną z praktycznym wdrażaniem rozwiązań.
+      </p>
+      <div class="flex flex-wrap gap-2.5">
+        <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">C++</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">Python</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">PLC</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">Mikrokontrolery</span>
+        <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">ROS</span>
+      </div>
+    </section>
+
+    <!-- Projekty -->
+    <section class="mb-8">
+      <h2 class="font-display text-xl sm:text-2xl font-semibold mb-5 flex items-center gap-3">
+        <i class="fa-solid fa-diagram-project text-blue-300"></i> Wybrane projekty
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Projekt 1 -->
+        <article class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-blue-400/30 transition duration-300 p-7 flex flex-col">
+          <div class="w-11 h-11 rounded-lg bg-blue-500/10 border border-blue-400/20 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-microphone text-lg text-blue-300"></i>
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2">Autonomiczny system rozpoznawania mowy Arduino</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-5">
+            Zaawansowany system rozpoznawania poleceń głosowych działający w pełni autonomicznie na mikrokontrolerze. 
+            Układ próbkuje dźwięk z mikrofonu, przetwarza go, 
+            a następnie porównuje z wgranymi wzorcami, wyświetlając wynik na ekranie OLED.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">C++</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">Arduino</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">Przetwarzanie sygnałów</span>
+          </div>
+          <a href="https://github.com/LukaszSmichurski/Autonomiczny-System-Rozpoznawania-Mowy-Arduino-" class="mt-auto inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-medium transition-colors duration-300">
+            <i class="fa-brands fa-github"></i> Zobacz na GitHubie
+          </a>
+        </article>
+
+        <!-- Projekt 2 -->
+        <article class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-blue-400/30 transition duration-300 p-7 flex flex-col">
+          <div class="w-11 h-11 rounded-lg bg-blue-500/10 border border-blue-400/20 flex items-center justify-center mb-5">
+            <i class="fa-solid fa-eye text-lg text-blue-300"></i>
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2">Real-Time Color Detection & Tracking</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-5">
+            Aplikacja w Pythonie do wykrywania, śledzenia i etykietowania obiektów w czasie rzeczywistym przy użyciu biblioteki OpenCV oraz przestrzeni barw HSV.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">Python</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">OpenCV</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">NumPy</span>
+          </div>
+          <a href="https://github.com/LukaszSmichurski/Color_detection_openCV" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-medium transition-colors duration-300">
+            <i class="fa-brands fa-github"></i> Zobacz na GitHubie
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-white/25 transition duration-300 p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <h2 class="font-display text-lg sm:text-xl font-semibold mb-1">Chcesz wiedzieć więcej?</h2>
+        <p class="text-slate-400 text-sm">Pełne CV z opisem doświadczenia i wykształcenia w formacie PDF.</p>
+      </div>
+      <a href="cv.pdf" download
+        class="shrink-0 inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl btn-primary text-white font-semibold shadow-lg transition-colors duration-300">
+        <i class="fa-solid fa-download"></i> Pobierz CV
+      </a>
+    </section>
+
+  </main>
+  <footer class="site-footer mt-16 sm:mt-24">
+    <div class="site-footer__inner">
+      <div class="site-footer__ornament" aria-hidden="true"><span></span></div>
+      <p class="site-footer__text font-mono">Łukasz Śmichurski · Zalasewo · Politechnika Poznańska</p>
+      <div class="site-footer__links">
+        <a href="https://www.linkedin.com/in/łukasz-śmichurski-4b88043a8/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+        <a href="https://github.com/LukaszSmichurski" aria-label="GitHub"><i class="fa-brands fa-github text-lg"></i></a>
+        <a href="mailto:smichluk@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope text-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
