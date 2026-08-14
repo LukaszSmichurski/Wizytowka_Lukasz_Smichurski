@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wizytówka — Łukasz Śmichurski</title>
-<meta name="description" content="Portfolio inżynierskie: projekty z automatyki, robotyki i programowania. C/C++, Python, PLC, ROS, Altium.">
+<meta name="description" content="Portfolio inżynierskie: projekty z automatyki, robotyki i programowania. C/C++, Python, PLC, ROS.">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -17,13 +17,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
 <link rel="manifest" href="favicon_io/site.webmanifest">
-
-<!-- Social meta -->
-<meta property="og:title" content="Wizytówka — Łukasz Śmichurski">
-<meta property="og:description" content="Portfolio inżynierskie: projekty z automatyki, robotyki i programowania. C/C++, Python, PLC, ROS, Altium.">
-<meta property="og:image" content="/images/lukasz-smichurski.jpg">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
 
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -44,21 +37,23 @@
     <!-- Nagłówek -->
     <header class="mb-12">
       <p class="font-mono text-xs sm:text-sm tracking-[0.3em] text-blue-300/80 uppercase mb-3">Portfolio inżynierskie</p>
-      <h1 class="font-display text-3xl sm:text-5xl font-bold tracking-tight mb-4">Automatyka, Robotyka, Kod.</h1>
+      <h1 class="font-display text-3xl sm:text-5xl font-bold tracking-tight mb-4">Elektronika, Robotyka, Kod.</h1>
       <p class="text-slate-400 max-w-2xl leading-relaxed">
         Wybrane projekty z okresu studiów oraz zainteresowań własnych — od programowania po autonomiczne układy elektroniczne.
       </p>
     </header>
 
     <!-- O mnie -->
-    <section class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-white/25 transition duration-300 p-7 sm:p-10 mb-8">
+    <section class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-white/25 transition duration-300 p-7 sm:p-10 mb-12">
       <h2 class="font-display text-xl sm:text-2xl font-semibold mb-4 flex items-center gap-3">
         <i class="fa-solid fa-user-gear text-blue-300"></i> O mnie
       </h2>
       <p class="text-slate-300 leading-relaxed mb-6 max-w-3xl">
-        Jestem studentem 3. roku Automatyki i Robotyki na Politechnice Poznańskiej. Interesuję się elektroniką, programowaniem oraz robotyką mobilną. Szukam stażu lub pracy, w której
-        mogę połączyć wiedzę teoretyczną z praktycznym wdrażaniem rozwiązań.
-      </p>
+        Jestem studentem 3. roku Automatyki i Robotyki na Politechnice Poznańskiej. Na moim kierunku najbardziej interesują mnie zagadnienia związane
+         z programowaniem, przetwarzaniem sygnałów, techniką cyfrową oraz robotyką. W wolnym czasie lubię uprawiać sport, w szczególności koszykówkę,
+         natomiast swoje zainteresowania techniczne rozwijam w kole naukowym RAI na Politechnice Poznańskiej.
+          W ramach koła realizuję projekt z zakresu robotyki mobilnej, polegający na budowie autonomicznego robota mobilnego wykrywajcego ogień
+        i samoczynnie gaszącego go przy użyciu strumienia wody.
       <div class="flex flex-wrap gap-2.5">
         <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">C++</span>
         <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">Python</span>
@@ -68,55 +63,111 @@
       </div>
     </section>
 
-    <!-- Projekty -->
-    <section class="mb-8">
-      <h2 class="font-display text-xl sm:text-2xl font-semibold mb-5 flex items-center gap-3">
+    <!-- PROJEKTY -->
+    <section class="mb-12">
+      <h2 class="font-display text-2xl sm:text-3xl font-bold mb-8 flex items-center gap-3">
         <i class="fa-solid fa-diagram-project text-blue-300"></i> Wybrane projekty
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Projekt 1: Syntezator (Zdjęcie po lewej) -->
+      <article class="glass rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group hover:border-blue-400/30 transition duration-300 relative mb-10">
+        <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-20 shadow-md">Nowość</div>
+        
+        <div class="lg:w-2/5 relative overflow-hidden bg-slate-800 min-h-[250px] lg:min-h-[300px] flex items-center justify-center border-b lg:border-b-0 lg:border-r border-white/10">
+          <img src="images/zdjecie_2.jpeg" alt="Pico Dual-Core Synth" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100 z-10">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent z-10"></div>
+        </div>
+        
+        <div class="p-6 sm:p-8 lg:w-3/5 flex flex-col justify-between z-20">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-display text-2xl font-bold text-white">Pico-DualCore-Synth</h3>
+              <a href="https://github.com/LukaszSmichurski/Pico-DualCore-Synth" target="_blank" aria-label="GitHub Repo" class="text-slate-400 hover:text-white transition-colors text-2xl bg-white/5 p-2 rounded-full hover:bg-blue-500/20">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <p class="text-blue-400 font-mono text-sm mb-4"><i class="fa-solid fa-microchip"></i> Hardware Synthesizer & DSP</p>
+            
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              W pełni cyfrowy, sprzętowy syntezator czasu rzeczywistego oparty na mikrokontrolerze RP2040. Projekt wykorzystuje architekturę dwurdzeniową: Core 1 dedykowany jest wyłącznie do przetwarzania sygnału audio (DSP) i obsługi I2S, natomiast Core 0 asynchronicznie zarządza interfejsem użytkownika OLED, obwiednią ADSR oraz skanowaniem matrycy klawiatury.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-xs font-mono text-blue-200">C++</span>
+            <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">RP2040</span>
+            <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">I2S Audio</span>
+          </div>
+        </div>
+      </article>
 
-        <!-- Projekt 1 -->
-        <article class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-blue-400/30 transition duration-300 p-7 flex flex-col">
-          <div class="w-11 h-11 rounded-lg bg-blue-500/10 border border-blue-400/20 flex items-center justify-center mb-5">
-            <i class="fa-solid fa-microphone text-lg text-blue-300"></i>
+      
+      <article class="glass rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row-reverse group hover:border-blue-400/30 transition duration-300 relative mb-10">
+        
+        <div class="lg:w-2/5 relative overflow-hidden bg-slate-800 min-h-[250px] lg:min-h-[300px] flex items-center justify-center border-b lg:border-b-0 lg:border-l border-white/10">
+          
+          <img src="images/scheamt_ukladu.png" alt="Arduino Voice Recognition" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100 z-10">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent z-10"></div>
+        </div>
+        
+        <div class="p-6 sm:p-8 lg:w-3/5 flex flex-col justify-between z-20">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-display text-2xl font-bold text-white">Rozpoznawanie Mowy Arduino</h3>
+              <a href="https://github.com/LukaszSmichurski/Autonomiczny-System-Rozpoznawania-Mowy-Arduino-" target="_blank" aria-label="GitHub Repo" class="text-slate-400 hover:text-white transition-colors text-2xl bg-white/5 p-2 rounded-full hover:bg-blue-500/20">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <p class="text-blue-400 font-mono text-sm mb-4"><i class="fa-solid fa-microphone-lines"></i> Embedded DSP & Pattern Matching</p>
+            
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              W pełni autonomiczny układ rozpoznający słowa z użyciem mikrokontrolera Arduino Nano. Sygnał z mikrofonu jest przetwarzany za pomocą cyfrowych filtrów pasmowych i analizy przejść przez zero.
+            </p>
+            <ul class="text-slate-400 text-sm mb-6 space-y-2 list-disc list-inside">
+              <li>Słownik 10 polskich wzorców prekompilowanych w pamięci <strong>PROGMEM</strong>.</li>
+              <li>Podział na 13 segmentów czasowych i ekstrakcja macierzy cech.</li>
+              <li>Algorytm analizujący odchylenie standardowe i przesunięcia czasowe.</li>
+            </ul>
           </div>
-          <h3 class="font-display text-lg font-semibold mb-2">Autonomiczny system rozpoznawania mowy Arduino</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-5">
-            Zaawansowany system rozpoznawania poleceń głosowych działający w pełni autonomicznie na mikrokontrolerze. 
-            Układ próbkuje dźwięk z mikrofonu, przetwarza go, 
-            a następnie porównuje z wgranymi wzorcami, wyświetlając wynik na ekranie OLED.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">C++</span>
-            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">Arduino</span>
-            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">Przetwarzanie sygnałów</span>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-xs font-mono text-blue-200">C++</span>
+            <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">Arduino Nano</span>
+            <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">Przetwarzanie sygnałów</span>
           </div>
-          <a href="https://github.com/LukaszSmichurski/Autonomiczny-System-Rozpoznawania-Mowy-Arduino-" class="mt-auto inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-medium transition-colors duration-300">
-            <i class="fa-brands fa-github"></i> Zobacz na GitHubie
-          </a>
-        </article>
+        </div>
+      </article>
 
-        <!-- Projekt 2 -->
-        <article class="glass rounded-2xl shadow-xl hover:bg-white/10 hover:border-blue-400/30 transition duration-300 p-7 flex flex-col">
-          <div class="w-11 h-11 rounded-lg bg-blue-500/10 border border-blue-400/20 flex items-center justify-center mb-5">
-            <i class="fa-solid fa-eye text-lg text-blue-300"></i>
+      
+      <article class="glass rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group hover:border-blue-400/30 transition duration-300 relative">
+        
+        <div class="lg:w-2/5 relative overflow-hidden bg-slate-800 min-h-[250px] lg:min-h-[300px] flex items-center justify-center border-b lg:border-b-0 lg:border-r border-white/10">
+          
+          <img src="images/Zdjecie_1.png" alt="OpenCV Tracking" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100 z-10">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent z-10"></div>
+        </div>
+        
+        <div class="p-6 sm:p-8 lg:w-3/5 flex flex-col justify-between z-20">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-display text-2xl font-bold text-white">Color Detection & Tracking</h3>
+              <a href="https://github.com/LukaszSmichurski/Color_detection_openCV" target="_blank" aria-label="GitHub Repo" class="text-slate-400 hover:text-white transition-colors text-2xl bg-white/5 p-2 rounded-full hover:bg-blue-500/20">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <p class="text-blue-400 font-mono text-sm mb-4"><i class="fa-solid fa-eye"></i> Computer Vision</p>
+            
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Aplikacja w języku Python realizująca zagadnienia wizji komputerowej. Skrypt wykorzystuje przestrzeń barw HSV do 
+              izolowania, śledzenia i etykietowania poruszających się obiektów o zadanych kolorach w strumieniu wideo z kamery na żywo. Program wykrywa kolorowe obiekty i obrysowuje je dynamicznymi ramkami.
+            </p>
           </div>
-          <h3 class="font-display text-lg font-semibold mb-2">Real-Time Color Detection & Tracking</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-5">
-            Aplikacja w Pythonie do wykrywania, śledzenia i etykietowania obiektów w czasie rzeczywistym przy użyciu biblioteki OpenCV oraz przestrzeni barw HSV.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">Python</span>
-            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">OpenCV</span>
-            <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 text-xs font-mono">NumPy</span>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-xs font-mono text-blue-200">Python</span>
+            <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">OpenCV</span>
+            <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">NumPy</span>
           </div>
-          <a href="https://github.com/LukaszSmichurski/Color_detection_openCV" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 text-sm font-medium transition-colors duration-300">
-            <i class="fa-brands fa-github"></i> Zobacz na GitHubie
-          </a>
-        </article>
+        </div>
+      </article>
 
-      </div>
     </section>
 
     <!-- CV -->
@@ -126,12 +177,13 @@
         <p class="text-slate-400 text-sm">Pełne CV z opisem doświadczenia i wykształcenia w formacie PDF.</p>
       </div>
       <a href="cv.pdf" download
-        class="shrink-0 inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl btn-primary text-white font-semibold shadow-lg transition-colors duration-300">
+        class="shrink-0 inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-lg transition-colors duration-300">
         <i class="fa-solid fa-download"></i> Pobierz CV
       </a>
     </section>
 
   </main>
+
   <footer class="site-footer mt-16 sm:mt-24">
     <div class="site-footer__inner">
       <div class="site-footer__ornament" aria-hidden="true"><span></span></div>

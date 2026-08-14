@@ -164,9 +164,9 @@ a.btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; }
 }
 
 
-/* Wyłączenie podskakiwania dla nawigacji (menu) */
+
 nav.glass:hover {
   transform: none;
-  box-shadow: 0 8px 30px rgba(2,6,23,0.5); /* Zatrzymuje zmianę cienia */
-  border-color: rgba(110,168,254,0.12); /* Zatrzymuje zmianę koloru ramki */
+  box-shadow: 0 8px 30px rgba(2,6,23,0.5); 
+  border-color: rgba(110,168,254,0.12); 
 }
