@@ -16,7 +16,12 @@ h1,h2,h3 { color: #eaf6ff; letter-spacing: -0.02em; }
 .hero-accent { color: var(--accent); text-shadow: 0 6px 22px rgba(78,208,225,0.06); }
 
 /* shared bg-photo rules (image set per-page via inline style) */
-.bg-photo { background-size: cover; background-position: center; background-attachment: scroll; }
+.bg-photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; <-- usunięto, robimy to za pomocą fixed diva w HTML */
+}
 
 /* Glass / frosted panel */
 .glass {
@@ -162,8 +167,6 @@ a.btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; }
   background: rgba(77, 208, 225, 0.12);
   border-color: rgba(77, 208, 225, 0.25);
 }
-
-
 
 nav.glass:hover {
   transform: none;
