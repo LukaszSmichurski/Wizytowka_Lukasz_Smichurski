@@ -21,7 +21,11 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="min-h-screen text-slate-100 relative overflow-x-hidden bg-photo" style="background-image: url('images/6.webp')" data-parallax-speed="0.32">
+<body class="min-h-screen text-slate-100 relative overflow-x-hidden">
+
+  <!-- Warstwa ze zdjęciem w tle -->
+  <div class="fixed top-0 left-0 w-screen h-screen -z-50" style="background-image: url('images/6.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
   <div class="fixed inset-0 -z-10 bg-slate-900/60"></div>
   <div class="fixed inset-0 -z-10 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900/40"></div>
 
@@ -50,10 +54,11 @@
       </h2>
       <p class="text-slate-300 leading-relaxed mb-6 max-w-3xl">
         Jestem studentem 3. roku Automatyki i Robotyki na Politechnice Poznańskiej. Na moim kierunku najbardziej interesują mnie zagadnienia związane
-         z programowaniem, przetwarzaniem sygnałów, techniką cyfrową oraz robotyką. W wolnym czasie lubię uprawiać sport, w szczególności koszykówkę,
+         z programowaniem, przetwarzaniem sygnałów, techniką cyfrową oraz robotyką. W wolnym czasie lubię uprawiać sport, w szczególności koszykówkę,
          natomiast swoje zainteresowania techniczne rozwijam w kole naukowym RAI na Politechnice Poznańskiej.
           W ramach koła realizuję projekt z zakresu robotyki mobilnej, polegający na budowie autonomicznego robota mobilnego wykrywajcego ogień
         i samoczynnie gaszącego go przy użyciu strumienia wody.
+      </p>
       <div class="flex flex-wrap gap-2.5">
         <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">C++</span>
         <span class="px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/25 text-blue-200 text-xs sm:text-sm font-mono">Python</span>
@@ -69,7 +74,7 @@
         <i class="fa-solid fa-diagram-project text-blue-300"></i> Wybrane projekty
       </h2>
 
-      <!-- Projekt 1: Syntezator (Zdjęcie po lewej) -->
+      <!-- Projekt 1: Syntezator -->
       <article class="glass rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group hover:border-blue-400/30 transition duration-300 relative mb-10">
         <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-20 shadow-md">Nowość</div>
         
@@ -100,11 +105,9 @@
         </div>
       </article>
 
-      
+      <!-- Projekt 2 -->
       <article class="glass rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row-reverse group hover:border-blue-400/30 transition duration-300 relative mb-10">
-        
         <div class="lg:w-2/5 relative overflow-hidden bg-slate-800 min-h-[250px] lg:min-h-[300px] flex items-center justify-center border-b lg:border-b-0 lg:border-l border-white/10">
-          
           <img src="images/scheamt_ukladu.webp" alt="Arduino Voice Recognition" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100 z-10">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent z-10"></div>
         </div>
@@ -136,11 +139,9 @@
         </div>
       </article>
 
-      
+      <!-- Projekt 3 -->
       <article class="glass rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group hover:border-blue-400/30 transition duration-300 relative">
-        
         <div class="lg:w-2/5 relative overflow-hidden bg-slate-800 min-h-[250px] lg:min-h-[300px] flex items-center justify-center border-b lg:border-b-0 lg:border-r border-white/10">
-          
           <img src="images/Zdjecie_1.webp" alt="OpenCV Tracking" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100 z-10">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent z-10"></div>
         </div>

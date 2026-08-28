@@ -28,13 +28,16 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="min-h-screen text-slate-100 relative overflow-x-hidden bg-photo" style="background-image: url('images/1.webp')" data-parallax-speed="0.35">
+<body class="min-h-screen text-slate-100 relative overflow-x-hidden">
+  
+  <!-- Warstwa ze zdjęciem w tle - zablokowana i na 100% ekranu -->
+  <div class="fixed top-0 left-0 w-screen h-screen -z-50" style="background-image: url('images/1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+  <!-- Warstwy przyciemniające -->
   <div class="fixed inset-0 -z-10 bg-slate-900/60"></div>
   <div class="fixed inset-0 -z-10 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900/40"></div>
 
   <main class="relative mx-auto max-w-5xl px-5 sm:px-8 py-14 sm:py-20 flex flex-col items-center">
-
-    
 
     <!-- Profil -->
     <section class="flex flex-col items-center text-center mb-14 sm:mb-20">
@@ -100,6 +103,7 @@
     </section>
 
   </main>
+  
   <footer class="site-footer mt-16 sm:mt-24">
     <div class="site-footer__inner">
       <div class="site-footer__ornament" aria-hidden="true"><span></span></div>
@@ -112,5 +116,5 @@
     </div>
   </footer>
   <script src="js/scripts.js"></script>
-  </body>
+</body>
 </html>

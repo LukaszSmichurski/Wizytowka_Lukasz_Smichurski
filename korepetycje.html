@@ -28,7 +28,11 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="min-h-screen text-slate-100 relative overflow-x-hidden bg-photo" style="background-image: url('images/5.webp')" data-parallax-speed="0.28">
+<body class="min-h-screen text-slate-100 relative overflow-x-hidden">
+
+  <!-- Warstwa ze zdjęciem w tle -->
+  <div class="fixed top-0 left-0 w-screen h-screen -z-50" style="background-image: url('images/5.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
   <div class="fixed inset-0 -z-10 bg-slate-900/60"></div>
   <div class="fixed inset-0 -z-10 bg-gradient-to-b from-slate-900/20 via-transparent to-slate-900/40"></div>
 
@@ -238,7 +242,7 @@
 
       <div class="grid grid-cols-1 gap-6">
 
-        <!-- Szybki kontakt (bez WhatsApp) -->
+        <!-- Szybki kontakt -->
         <div class="flex flex-col gap-5">
           <div class="glass rounded-2xl shadow-xl p-6 flex flex-col gap-3 text-sm">
             <a href="mailto:smichurski34@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-emerald-300 transition-colors duration-300">
