@@ -74,10 +74,85 @@
         <i class="fa-solid fa-diagram-project text-blue-300"></i> Wybrane projekty
       </h2>
 
+      <!-- NOWY WYRÓŻNIONY PROJEKT: Fintech Dashboard -->
+      <article class="glass rounded-2xl shadow-2xl overflow-hidden flex flex-col group border-2 border-blue-500/40 hover:border-blue-400 transition duration-300 relative mb-14 bg-blue-900/10">
+        <!-- Odznaka Wyróżnienia -->
+        <div class="absolute top-0 right-0 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs sm:text-sm font-bold px-5 py-2 rounded-bl-xl z-20 shadow-lg flex items-center gap-2">
+          <i class="fa-solid fa-star text-yellow-300"></i> Wyróżniony Projekt
+        </div>
+
+        <div class="p-6 sm:p-8 md:p-10 flex flex-col z-20">
+          
+          <!-- Tytuł i Przycisk Live -->
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6 mt-4 md:mt-0">
+            <div>
+              <h3 class="font-display text-3xl font-bold text-white mb-2">📈 Fintech Portfolio & Strategy Dashboard</h3>
+              <p class="text-blue-400 font-mono text-sm mb-4"><i class="fa-solid fa-chart-line"></i> Quantitative Strategy Automation & Analysis</p>
+            </div>
+            <a href="https://stock-market-app-smichurski.streamlit.app" target="_blank" class="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600/20 hover:bg-blue-600 text-blue-100 hover:text-white font-semibold border border-blue-500/50 hover:border-blue-500 transition-all duration-300 shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Zobacz aplikację
+            </a>
+          </div>
+          
+          <blockquote class="border-l-4 border-blue-500 pl-5 py-2 mb-8 text-slate-300 italic bg-white/5 rounded-r-lg">
+            An interactive web application for portfolio analysis, financial instrument return comparison, and quantitative strategy automation (Dual Momentum / GEM).
+          </blockquote>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8">
+            <!-- O Projekcie -->
+            <div>
+              <h4 class="text-white font-semibold text-xl mb-5 flex items-center gap-2"><i class="fa-solid fa-rocket text-blue-400"></i> About the Project</h4>
+              <p class="text-slate-300 text-sm leading-relaxed mb-5">
+                This project was created for modern investors looking for tools based on hard data and proven quantitative strategies. The application combines clean software architecture with advanced visualization of real-time market data fetched from Yahoo Finance.
+              </p>
+              <h5 class="text-white font-medium text-sm mb-3">Key Features:</h5>
+              <ul class="text-slate-400 text-sm space-y-3">
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-check text-blue-500 mt-1"></i>
+                  <span><strong class="text-slate-200">Two Analysis Modes:</strong> Custom Portfolio (compare any stock indices, equities, or cryptocurrencies) & GEM Strategy (Gary Antonacci's Dual Momentum in Original and European UCITS ETF variants).</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-check text-blue-500 mt-1"></i>
+                  <span><strong class="text-slate-200">Automatic Normalization:</strong> Recalculating historical valuations to a base of 100, enabling reliable comparisons of growth dynamics across different assets.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-check text-blue-500 mt-1"></i>
+                  <span><strong class="text-slate-200">Professional UI/UX:</strong> KPI tiles with dynamic profit/loss coloring, a dark theme for Plotly charts, and a responsive Streamlit layout with a sidebar.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Architektura -->
+            <div class="flex flex-col">
+              <h4 class="text-white font-semibold text-xl mb-5 flex items-center gap-2"><i class="fa-solid fa-folder-tree text-blue-400"></i> Project Architecture</h4>
+              <p class="text-slate-400 text-sm mb-4">The project is designed following the <em>Separation of Concerns</em> principle:</p>
+              <div class="bg-slate-900/80 p-5 rounded-xl border border-white/10 overflow-x-auto h-full shadow-inner">
+<pre class="text-xs font-mono text-slate-300 leading-loose"><code>Stock_Market_App/
+├── <span class="text-blue-300">app.py</span>              <span class="text-slate-500"># Main UI presentation layer (Streamlit)</span>
+├── <span class="text-blue-300">logic.py</span>            <span class="text-slate-500"># Business logic, time-series processing, API</span>
+├── <span class="text-blue-300">config.py</span>           <span class="text-slate-500"># Asset dictionaries (Indices, US & UCITS ETFs)</span>
+├── <span class="text-green-300">requirements.txt</span>    <span class="text-slate-500"># Project dependencies</span>
+└── <span class="text-slate-400">.gitignore</span>          <span class="text-slate-500"># Files ignored by Git</span></code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Stack Tags -->
+          <div class="pt-6 border-t border-white/10 flex flex-wrap items-center gap-3">
+            <span class="text-slate-300 text-sm font-semibold mr-2 flex items-center gap-2"><i class="fa-solid fa-layer-group text-blue-400"></i> Tech Stack:</span>
+            <span class="px-3.5 py-1.5 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs font-mono text-blue-100">Python 3.10+</span>
+            <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">Streamlit</span>
+            <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">Pandas</span>
+            <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">NumPy</span>
+            <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">Plotly Express</span>
+            <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">yfinance</span>
+            <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-slate-300">Git / GitHub</span>
+          </div>
+        </div>
+      </article>
+
       <!-- Projekt 1: Syntezator -->
       <article class="glass rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group hover:border-blue-400/30 transition duration-300 relative mb-10">
-        <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-20 shadow-md">Nowość</div>
-        
         <div class="lg:w-2/5 relative overflow-hidden bg-slate-800 min-h-[250px] lg:min-h-[300px] flex items-center justify-center border-b lg:border-b-0 lg:border-r border-white/10">
           <img src="images/zdjecie_2.webp" alt="Pico Dual-Core Synth" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100 z-10">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent z-10"></div>
